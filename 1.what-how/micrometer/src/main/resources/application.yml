@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: micrometer
+server:
+  port: 10000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus, metrics
